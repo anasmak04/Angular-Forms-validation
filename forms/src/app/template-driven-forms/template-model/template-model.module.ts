@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CustomMaterialUiModule } from 'src/app/custom-material-ui/custom-material-ui.module';
 import { TemplateDrivenFormsComponent } from '../template-driven-forms.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -9,12 +10,14 @@ import { TemplateDrivenFormsComponent } from '../template-driven-forms.component
   ],
   imports: [
     CommonModule,
-    CustomMaterialUiModule
+    CustomMaterialUiModule,
+    FormsModule,
   ],
 
   exports : [
     TemplateDrivenFormsComponent,
-    CustomMaterialUiModule
+    CustomMaterialUiModule,
+    FormsModule,
   ]
 })
 export class TemplateModelModule { }
