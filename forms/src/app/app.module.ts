@@ -6,9 +6,10 @@ import { TemplateDrivenFormsComponent } from './template-driven-forms/template-d
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [
+    NavbarComponent,
     AppComponent,
     TemplateDrivenFormsComponent,
     ReactiveFormsComponent
