@@ -7,6 +7,8 @@
 
 
 .container > p{
-    font-size: 24px;
+    font-size: 30px;
     text-transform: capitalize;
+    width :50%;
+    line-height: 66px;
 }
