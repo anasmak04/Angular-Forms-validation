@@ -7,3 +7,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin : 0;
     box-sizing : border-box;
 }
+
+.github{
+    margin-left: 320px;
+}
