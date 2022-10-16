@@ -4,24 +4,25 @@
 </div>
 <form class="example-form" [formGroup]="myForm" (ngSubmit)="onsubmit()">
     <mat-form-field class="example-full-width" appearance="fill">
-      <mat-label>FullName</mat-label>
-      <input matInput placeholder="John smith"  name="FullName" value="John smith">
+        <mat-label>FullName</mat-label>
+        <input matInput placeholder="John smith" formControlName="FullName" name="FullName" value="John smith">
     </mat-form-field>
 
     <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Email</mat-label>
-        <input matInput placeholder="Email" name="Email"  value="Jogn.smith@gmail.com">
-      </mat-form-field>
+        <input matInput placeholder="Email" formControlName="Email" name="Email" value="Jogn.smith@gmail.com">
+    </mat-form-field>
 
-  
+
     <mat-form-field class="example-full-width" appearance="fill">
-      <mat-label>Leave a comment</mat-label>
-      <textarea name="comment"  matInput placeholder="Ex. It makes me feel..."></textarea>
+        <mat-label>Leave a comment</mat-label>
+        <textarea name="comment" formControlName="comment" matInput placeholder="Ex. It makes me feel..."></textarea>
     </mat-form-field>
 
     <section>
         <div class="example-button-row">
-          <button (click)="submit()" type="submit" mat-raised-button color="primary">save</button>
+            <button (click)="submit()" [disabled]="!myForm.valid" type="submit" mat-raised-button
+                color="primary">save</button>
         </div>
-      </section>
-  </form>
+    </section>
+</form>

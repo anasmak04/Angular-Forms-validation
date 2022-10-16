@@ -1,0 +1,26 @@
+.example-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.example-full-width{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.example-button-row{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    text-transform: capitalize;
+}
